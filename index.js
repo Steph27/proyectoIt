@@ -61,8 +61,5 @@ app.use((req, res, next) => {
 app.use(require('./routes/userRoutes'));
 app.use(require('./routes/indexRoutes'));
 
-app.listen(process.env.PORT, () => {
-    console.log(`App corriendo en el puerto ${process.env.PORT}`)
-});
 
 module.exports = app;
