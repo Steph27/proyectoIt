@@ -1,0 +1,146 @@
+/* .head-primary {
+    background-color:rgba(124, 252, 64, 0.612);
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+
+.logo-img-container {
+    max-width: 450px;
+    margin: auto;
+}
+
+.text-center {
+    text-align: center!important;
+}
+.col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.col,.col-md-3, .col-lg-3 {
+
+position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+div {
+    display: block;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.header-section{
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-color:#CAE4D8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart, .user, .chat{
+    width: 16px;
+    height: 16px;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.cart-icon, .user-icon, .chat-icon{
+    width: 10px;
+    height: 10px;
+}
+
+.cart-item-count{
+    color: #ffff;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 50%;
+    background: #0000;
+    position: absolute;
+    bottom:-12px;
+    left: -12px;
+}
+.user-interactions{
+    display: flex;
+    position: absolute;
+    right: 5vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 9;
+    transition: 0,5s;
+
+}
+
+.buscador{
+    width: 450px;
+} */
+
+a{
+    cursor:pointer;
+}
+.offcanvas-contenedor{
+    display: flex;
+    align-items: center;
+}
+
+.img-carrito{
+    width: 200px;
+    padding: 20px;
+}
+
+.parrafo{
+    font-weight: 500;
+    font-style: italic;
+    color: #A6CD39;
+}
+
+#carritoContenedor{
+    font-family: 'Lato' , sans-serif ;
+    color: #ffff;
+    padding: 5px;
+    margin:5px;
+    font-size: 15px;
+    border-radius: 50%;
+    background-color: #A6CD39;
+    position:inherit;
+    left: -12px;
+}
+
+.nav-link{
+    text-align: center;
+}

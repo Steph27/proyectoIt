@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="text-center m-5">
+        <hr>
+        <h1>
+            Mis datos
+        </h1>
+        <hr>
+
+    </div>
+    <div class="row">
+        <form action="/edit/{{user._id}}?_method=PUT"  method="POST">
+            <input type="hidden" name="_method" value="PUT">
+                <div class="mb-3">
+                    <label for="nombre_apellido" class="form-label">Nombre y Apellido</label>
+                    <input type="text" name="nombre_apellido" class="form-control" id="nombre_apellido" value="{{user.nombre_apellido}}">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control" id="email" value="{{user.email}}">
+                </div>
+
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Telefono</label>
+                    <input type="number" name="telefono" class="form-control" id="telefono" value="{{user.telefono}}">
+                </div>
+                
+                <div class="container text-center form-group">
+                    <button type="submit" class="btn btn-success w-50 p-2">
+                        Guardar cambios
+                    </button>
+                </div>
+        </form>
+    </div>
+</div>

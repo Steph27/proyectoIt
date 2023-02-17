@@ -1,0 +1,66 @@
+<div class="container-fluid text-center mt-5">
+
+    <h3>Mi cuenta </h3>
+    
+
+</div>
+    <div class="container text-end pb-4">
+    <a href="/logout"><button class="btn btn-success">Cerrar Sesion</button></a>
+    </div>
+
+
+
+<div class="container text-start">
+    <div class="row">
+        <div class="col bg-success bg-opacity-10 border border-success border-start-0 border-end-0 p-2">
+            Datos
+        </div>
+        <div class="col-md-6 bg-success bg-opacity-10 border border-success border-start-0 border-end-0 p-2">
+            Mis compras
+        </div>
+    </div>
+
+
+    <div class="col-3 text-start border-bottom border-success p-2" style="font-weight: bolder";>
+            Datos personales       
+    </div>
+
+    <div class="row">
+        <div class="col-3 pt-3 text-start" style="font-weight: bold;">
+            {{user.nombre_apellido }}       
+        </div>
+    </div>
+
+    <div class="row p-2">
+        <div class="col-3 text-start">
+            {{user.email }}      
+        </div>
+    </div>
+
+    <div class="row row-cols-auto p-2">
+        <div class="col text-start" style="font-weight: bold">
+            Teléfono:       
+        </div>
+        <div class="col text-start">
+        {{ user.telefono }}       
+        </div>
+    
+    </div>
+
+    <div class="row row-cols-auto">
+        
+        <div class="col text-end">
+            <a href="/edit"><button class="btn btn-success" type="submit">Editar</button></a>
+        </div>
+    </div>
+    <form action="/borrar/delete/{{user._id}}?_method=DELETE" method="POST">
+        <input type="hidden" name="_method" value="DELETE">
+        <div class="text-end"> 
+        <button class="btn btn-danger"> Eliminar cuenta</button>
+        </div>
+    </form>
+        
+        
+</div>
+
+
