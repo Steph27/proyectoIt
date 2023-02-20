@@ -50,11 +50,11 @@ const stockAuriculares = [
 
 ];
 
-    const contenedor = document.getElementById('contenedor');
+    const contenedorAuriculares = document.getElementById('contenedorAuriculares');
 
     stockAuriculares.forEach((prod) =>{
     const {id, nombre, precio, desc, img, cantidad} = prod;
-    contenedor.innerHTML +=  `
+    contenedorAuriculares.innerHTML +=  `
     <div class="card" style="width: 18rem;">
     <img src="${img}" class="card-img-top" alt="Card image cap">
     <div class="card-body">
@@ -62,8 +62,9 @@ const stockAuriculares = [
         <h6 class="card-text">Precio: ${precio}</h6>
         <p class="card-text">${desc}</p>
 
-        <button onclick="agregarProducto(${id})" class="btn btn-success">Comprar</button>
+        <button onclick="agregarAuricular(${id})" class="btn btn-success">Comprar</button>
     </div>
     </div>
         `
 });
+

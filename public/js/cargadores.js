@@ -85,11 +85,12 @@ stockCargadores.forEach((prod) =>{
         <img src="${img}" class="card-img-top" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">${nombre}</h5>
-            <p class="card-text">Precio:${precio}</p>
+            <h6 class="card-text">Precio:${precio}</h6>
             <p class="card-text">${desc}</p>
 
-            <button id="btnComprar" class="btn btn-success">Comprar</button>
+            <button onclick="agregarCargador(${id})" class="btn btn-success">Comprar</button>
         </div>
+
     </div>
         `
 });
